@@ -68,6 +68,11 @@ main {
     color: #FFFFFF;
 }
 
+.card .button button:hover {
+    cursor: pointer;
+    background: #00577D;
+}
+
 .placeholder {
     background-color: #F8F8F8;
     box-shadow: none;
