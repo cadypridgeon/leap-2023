@@ -30,30 +30,47 @@ main {
     padding: 32px;
     gap: 32px;
     flex: 1 0 0;
+    justify-content: space-between;
     align-self: stretch;
     border-radius: 16px;
     background: #DBF1FC;
     box-shadow: 0px 4px 4px 0px rgba(165, 165, 165, 0.10);
 }
 
-.card hr {
+.card .content {
+    gap: 32px;
+}
+
+.card .content hr {
     align-self: stretch;
     border: 2px solid #007DB3;
 }
 
-.card .info {
+.card .content .info {
     gap: 16px;
     align-self: stretch;
 }
 
-.card a {
-    display: flex;
+.card .button {
+    /* justify-content: end; */
+    align-self: stretch;
 }
 
-.card a button {
+.card .button a {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.card .button button {
     align-self: stretch;
     background: #007DB3;
     color: #FFFFFF;
+}
+
+.placeholder {
+    background-color: #F8F8F8;
+    box-shadow: none;
 }
 
 @media screen and (max-width: 576px) {
