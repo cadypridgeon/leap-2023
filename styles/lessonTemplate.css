@@ -1,0 +1,138 @@
+div, main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #A5A5A5;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* ---------------------------------------- */
+
+.header {
+    padding: 64px 128px;
+    gap: 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px rgba(165, 165, 165, 0.10);
+}
+
+.header .links {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* ---------------------------------------- */
+
+main {
+    padding: 128px;
+    gap: 64px;
+    align-items: flex-end;
+    background: #F8F8F8;
+}
+
+.title, .definition, .example, .quiz, .quizQuestion, .answer {
+    align-self: stretch;
+}
+
+.title, .definition, .example {
+    gap: 16px;
+}
+
+.question, .solution, .quiz, .quizQuestion, .multipleChoice, .answer {
+    gap: 8px;
+}
+
+.example, .quizQuestion, .answer {
+    padding: 32px;
+    border-radius: 16px;
+}
+
+/* ---------------------------------------- */
+
+.definition ul {
+    padding-left: 24px;
+}
+
+/* ---------------------------------------- */
+
+.example {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px rgba(165, 165, 165, 0.10);
+}
+
+.example h4, h5 {
+    color: #CC4E0B;
+}
+
+/* ---------------------------------------- */
+
+.quizQuestion {
+    background: #DBF1FC;
+}
+
+.quizQuestion h4 {
+    color: #006C9A;
+}
+
+.multipleChoice span {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+}
+
+.multipleChoice input[type = "radio"] {
+    appearance: none;
+    width: 1.25em;
+    height: 1.25em;
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.multipleChoice input[type = "radio"]:checked {
+    background-color: #0B2341;
+}
+
+.correct {
+    display: none;
+    background: #F1F8E6;
+    box-shadow: 0px 4px 4px 0px rgba(165, 165, 165, 0.10);
+}
+
+.correct h4 {
+    color: #215834;
+}
+
+/* ---------------------------------------- */
+
+.nextButton {
+    background-color: #CC4E0B;
+    color: #FFFFFF;
+}
+
+.nextButton:hover {
+    cursor: pointer;
+    background-color: #A33E09;
+}
+
+@media screen and (max-width: 576px) {
+
+    .header {
+        padding: 32px 48px;
+    }
+
+    main {
+        padding: 64px 48px;
+    }
+
+}
