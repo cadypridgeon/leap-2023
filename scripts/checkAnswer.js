@@ -1,8 +1,10 @@
-// questionSet - document.querySelectorAll: input[name = "<question number>"]
+// questionNumber - string: value of name for <input>
 // answer - string: answer to the question
 // correctElement - string: id of the element for a correct answer
 // incorrectElement - string: id of the element for an incorrect answer
-function checkAnswer(questionSet, answer, correctElement) {
+function checkAnswer(questionNumber, answer, correctElement) {
+    questionSet = document.querySelectorAll(`input[name = ${questionNumber}]`);
+    
     for (const selected of questionSet) {
         selected.addEventListener('change', () => {
 
@@ -16,4 +18,5 @@ function checkAnswer(questionSet, answer, correctElement) {
     }
 }
 
-checkAnswer(document.querySelectorAll('input[name = "q1"]'), "3:2", "q1-correct");
+// Example
+// checkAnswer("q1", "3:2", "q1-correct");
