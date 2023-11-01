@@ -58,6 +58,12 @@ button {
     font-size: 1.5rem;
 }
 
+div, main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .header {
     padding: 64px 128px;
     gap: 32px;
