@@ -42,7 +42,7 @@ main {
     box-shadow: 0px 4px 4px 0px rgba(165, 165, 165, 0.10);
 }
 
-.example h4, h5 {
+.example .bold {
     color: #CC4E0B;
 }
 
@@ -52,7 +52,7 @@ main {
     background: #DBF1FC;
 }
 
-.quizQuestion h4 {
+.quizQuestion .bold {
     color: #006C9A;
 }
 
@@ -81,7 +81,7 @@ main {
     box-shadow: 0px 4px 4px 0px rgba(165, 165, 165, 0.10);
 }
 
-.correct h4 {
+.correct .bold {
     color: #215834;
 }
 

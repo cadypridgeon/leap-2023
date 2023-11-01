@@ -8,6 +8,8 @@
 }
 
 h1, h2, h3 {
+    font-size: normal;
+    font-weight: 900;
     color: #0B2341;
 }
 
@@ -27,23 +29,35 @@ h3 {
 }
 
 h4 {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.body-l {
     font-size: 1.5rem;
-    line-height: 1.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.25rem;
 }
 
-h5 {
+.body-m {
     font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
     line-height: 1.875rem;
 }
 
-p, li, label {
-    font-size: 1.25rem;
-    line-height: 1.875rem;
-}
-
-a {
+.body-s {
     font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
     line-height: 1.5rem;
+}
+
+.bold {
+    font-weight: 900;
 }
 
 button {
