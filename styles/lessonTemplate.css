@@ -9,28 +9,6 @@ hr {
     border: 1px solid #A5A5A5;
 }
 
-.icon {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-/* ---------------------------------------- */
-
-.header {
-    padding: 64px 128px;
-    gap: 32px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px 0px rgba(165, 165, 165, 0.10);
-}
-
-.header .links {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
 /* ---------------------------------------- */
 
 main {
