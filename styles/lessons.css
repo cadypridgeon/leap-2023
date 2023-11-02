@@ -1,8 +1,6 @@
-.header {
+header {
     padding: 120px 128px 64px 128px;
 }
-
-/* ---------------------------------------- */
 
 main {
     flex-direction: row;
@@ -12,13 +10,10 @@ main {
     background: #F8F8F8;
 }
 
-/* ---------------------------------------- */
-
 .card {
-    min-width: 22rem;
     padding: 32px;
     gap: 32px;
-    flex: 1 0 0;
+    flex: 1 1 22rem;
     justify-content: space-between;
     align-self: stretch;
     border-radius: 16px;
@@ -40,40 +35,37 @@ main {
     align-self: stretch;
 }
 
-.card .button {
-    align-self: stretch;
-}
-
-.card .button a {
+.card a {
     display: flex;
     flex-direction: column;
     align-self: stretch;
 }
 
-.card .button button {
+.card a button {
     align-self: stretch;
     background: #007DB3;
     color: #FFFFFF;
 }
 
-.card .button button:hover {
+.card a button:hover {
     cursor: pointer;
     background: #00577D;
 }
 
 .placeholder {
+    padding: 0px;
     background-color: #F8F8F8;
     box-shadow: none;
 }
 
 @media screen and (max-width: 576px) {
 
-    .header {
-        padding: 32px 48px;
+    header {
+        padding: 24px;
     }
 
     main {
-        padding: 64px 48px;
+        padding: 24px;
     }
 
 }
