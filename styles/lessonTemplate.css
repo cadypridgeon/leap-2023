@@ -96,3 +96,15 @@ main {
     cursor: pointer;
     background-color: #A33E09;
 }
+
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 24px;
+    }
+
+    main {
+        padding: 24px;
+    }
+
+}
