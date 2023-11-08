@@ -1,0 +1,115 @@
+/* Desktop Nav Properties */
+
+.desktopNav {
+    display: flex;
+    padding: 16px 32px;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px rgba(165, 165, 165, 0.10);
+}
+
+.desktopNav img {
+    max-height: 4rem;
+}
+
+.desktopNav .menu {
+    flex-direction: row;
+    align-items: center;
+    gap: 64px;
+}
+
+/* Nav Properties Used for both Desktop and Mobile*/
+
+nav .menu a {
+    color: #CC4E0B;
+}
+
+nav .menu a:hover {
+    border-bottom: 2px solid #A33E09;
+    color: #A33E09;
+}
+
+nav .menu .current {
+    cursor: default;
+    border-bottom: 2px solid #A33E09;
+    color: #A33E09;
+}
+
+nav .menu .buttons {
+    display: flex;
+    gap: 32px;
+}
+
+nav .menu .buttons button {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+nav .menu .buttons .primary {
+    border: 2px solid #CC4E0B;
+    background: #CC4E0B;
+    color: #FFFFFF;
+}
+
+nav .menu .buttons .secondary {
+    border: 2px solid #CC4E0B;
+    background: #FFFFFF;
+    color: #CC4E0B;
+}
+
+nav .menu .buttons button:hover {
+    cursor: pointer;
+    border: 2px solid #A33E09;
+    background: #A33E09;
+    color: #FFFFFF;
+}
+
+/* Mobile Nav Properties */
+
+.mobileNav {
+    display: none;
+}
+
+.mobileNav .header {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    padding: 16px 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px rgba(165, 165, 165, 0.10);
+}
+
+.mobileNav .menu {
+    width: 100%;
+    height: 0;
+    align-items: center;
+    justify-content: start;
+    gap: 32px;
+    z-index: 1;
+}
+
+.mobileNav .menu .header {
+    box-shadow: none;
+}
+
+.mobileNav .menu .buttons {
+    flex-direction: column;
+}
+
+@media screen and (max-width: 750px) {
+
+    .desktopNav {
+        display: none;
+    }
+
+    .mobileNav {
+        display: flex;
+    }
+
+    .mobileNav .menu {
+        display: none;
+    }
+
+}
