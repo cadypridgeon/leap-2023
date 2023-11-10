@@ -1,0 +1,92 @@
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 128px;
+    align-items: center;
+    gap: 128px;
+}
+
+main .heading {
+    gap: 32px;
+}
+
+main img {
+    width: 100%;
+    max-width: 448px;
+}
+
+main .heading button {
+    background-color: #CC4E0B;
+    color: #FFFFFF;
+}
+
+main .heading button:hover {
+    cursor: pointer;
+    background-color: #A33E09;
+}
+
+/* ---------------------------------------- */
+
+.about {
+    padding: 128px;
+    gap: 64px;
+    background: #F8F8F8;
+}
+
+.about .heading {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #A5A5A5;
+    width: 100%;
+}
+
+.about .quote {
+    padding: 16px 32px;
+    border-left: 4px solid #006C9A;
+    width: 100%;
+    background: #EEE;
+}
+
+.about .principles {
+    gap: 16px;
+}
+
+.about .principles .card {
+    flex-direction: row;
+    padding: 32px;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    border-radius: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px rgba(165, 165, 165, 0.10);
+}
+
+.about .principles .card svg {
+    flex-shrink: 0;
+}
+
+/* ---------------------------------------- */
+
+@media screen and (max-width: 1300px) {
+
+    main {
+        flex-wrap: wrap-reverse;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    main, .about {
+        padding: 32px;
+    }
+
+    main {
+        gap: 64px;
+    }
+
+    .about .principles .card {
+        flex-wrap: wrap;
+    }
+
+}

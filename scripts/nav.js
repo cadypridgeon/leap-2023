@@ -1,6 +1,6 @@
 function openMenu() {
     document.getElementById("mobileHeader").style.display = "none";
-    document.getElementById("mobileMenu").style.height = "100vh";
+    document.getElementById("mobileMenu").style.height = "100%";
     document.getElementById("mobileMenu").style.display = "flex";
 }
 
