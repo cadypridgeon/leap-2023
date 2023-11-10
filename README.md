@@ -1,8 +1,6 @@
-# leap-ui
-Web Design for Leap
-
 # Auburn | COMP 5620 | 2023
 # LEAP 1
+Web Design for LEAP
 
 - Naomi Gonzalez
 - Emily Kimbrell
