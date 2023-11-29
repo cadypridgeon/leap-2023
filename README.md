@@ -10,5 +10,3 @@ Web Design for LEAP
 - Olivia Smith
 
 [Original Design](https://leap-au.azurewebsites.net)
-<br>
-[New Design](/index.html)
